@@ -36,9 +36,9 @@ class _AggadTrips extends State<AggadTrips> {
         //Personalizacion
         data: Theme.of(context).copyWith(
             //Para colorear la barra
-            canvasColor: Colors.white,
+            canvasColor: Colors.green,
             primaryColor: Colors
-                .green //Este es el color que queremos para los iconos cuando se seleccionen
+                .white70 //Este es el color que queremos para los iconos cuando se seleccionen
 
             ),
         child: BottomNavigationBar(
