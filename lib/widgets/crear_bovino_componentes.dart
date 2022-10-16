@@ -5,6 +5,7 @@ import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:intl/intl.dart';
 import 'package:aggad/widgets/realizar_registro.dart';
 import 'package:aggad/widgets/card_image.dart';
+import 'package:aggad/widgets/RadioButtonGrup.dart';
 
 class FormularioPage extends StatefulWidget {
   const FormularioPage({Key? key}) : super(key: key);
@@ -64,9 +65,8 @@ class _FormularioPageState extends State<FormularioPage> {
         body: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.5, vertical: 10.0),
           children: [
-            NombreBovino(), // TextField con múltiples opciones de decoración
-            Divider(),
-            _crearRadio(),
+            NombreBovino(),
+            RadioGroup(),
             Divider(),
             IdentificacionBovino(),
             Divider(),

@@ -1,5 +1,7 @@
+import 'package:aggad/Registros/ui/widgets/campos_registro_ventas_leche.dart';
 import 'package:aggad/menu_desplegable.dart';
 import 'package:flutter/material.dart';
+import 'package:aggad/Registros/ui/widgets/campos_registro_ventas_leche.dart';
 
 class RegistroVentasLeche extends StatelessWidget {
   static const String routeName = '/RegistroVentasLeche';
@@ -12,11 +14,8 @@ class RegistroVentasLeche extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       drawer: MenuDesplegable(),
-      body: Center(
-        child: Text(
-          'Home Page',
-        ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      body:
+          CamposRegistroVentas(), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

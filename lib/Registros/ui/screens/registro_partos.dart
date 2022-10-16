@@ -1,6 +1,6 @@
 import 'package:aggad/menu_desplegable.dart';
 import 'package:flutter/material.dart';
-
+import 'package:aggad/Registros/ui/widgets/campos_registro_partos.dart';
 import 'package:aggad/aggad_trips.dart';
 
 class RegistroPartos extends StatelessWidget {
@@ -14,11 +14,8 @@ class RegistroPartos extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       drawer: MenuDesplegable(),
-      body: Center(
-        child: Text(
-          'Home Page',
-        ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      body:
+          CampoRegistroPartos(), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
