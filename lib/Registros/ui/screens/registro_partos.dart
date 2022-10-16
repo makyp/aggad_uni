@@ -14,8 +14,11 @@ class RegistroPartos extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       drawer: MenuDesplegable(),
-      body:
-          AggadTrips(), // This trailing comma makes auto-formatting nicer for build methods.
+      body: Center(
+        child: Text(
+          'Home Page',
+        ),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

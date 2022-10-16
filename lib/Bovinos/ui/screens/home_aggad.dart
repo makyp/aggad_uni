@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:aggad/Bovinos/ui/widgets/calendar/g_simple_calendar.dart';
+import 'package:aggad/Bovinos/ui/widgets/calendar/gCustomButtonModel.dart';
 import 'package:aggad/menu_desplegable.dart';
 
-class HomeAggad extends StatelessWidget {
+class HomeAggad extends StatefulWidget {
+  @override
+  _HomeAggad createState() => _HomeAggad();
+}
+
+class _HomeAggad extends State<HomeAggad> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return Container(
-      color: Colors.white70,
+    return Scaffold(
+      body: TableEventsExample(),
     );
   }
 }

@@ -8,7 +8,7 @@ class RegistroVacunacion extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AGGAD-REGISTRO DE VACUNACIÓN"),
+        title: Text("AGGAD-VACUNACIÓN"),
         backgroundColor: Colors.green,
       ),
       drawer: MenuDesplegable(),

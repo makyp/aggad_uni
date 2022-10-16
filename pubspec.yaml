@@ -45,6 +45,7 @@ dependencies:
   font_awesome_flutter: ^10.2.1
   sqflite: ^2.1.0+1
   syncfusion_flutter_calendar: ^20.3.49
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
@@ -75,6 +76,15 @@ flutter:
   assets:
     - assets/img/drawer_header.png
     - assets/img/Finca.jpg
+    - assets/img/Ternero.jpeg
+    - assets/img/Ternero1.jpg
+    - assets/img/Ternero2.jpg
+    - assets/img/Vaca.jpeg
+    - assets/img/Vaca1.jpeg
+    - assets/img/Vaca2.jpeg
+    - assets/img/Vaca3.jpeg
+    - assets/img/Vaca4.jpeg
+    - assets/img/Vaca5.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
