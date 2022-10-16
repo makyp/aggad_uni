@@ -35,12 +35,11 @@ class _AggadTrips extends State<AggadTrips> {
       bottomNavigationBar: Theme(
         //Personalizacion
         data: Theme.of(context).copyWith(
-            //Para colorear la barra
-            canvasColor: Colors.green,
-            primaryColor: Colors
-                .white70 //Este es el color que queremos para los iconos cuando se seleccionen
-
-            ),
+          //Para colorear la barra
+          canvasColor: Color(0xFF66BBB6A),
+          primaryColor: Colors.white70,
+          //Este es el color que queremos para los iconos cuando se seleccionen
+        ),
         child: BottomNavigationBar(
           showSelectedLabels: false,
           showUnselectedLabels: false,
@@ -50,20 +49,26 @@ class _AggadTrips extends State<AggadTrips> {
           items: [
             //Dentro se colocan los taps que tenga nuestro bottonNavigation
             BottomNavigationBarItem(
-              icon: Icon(Icons
-                  .home), //Home es un icono por defecto que nos proporcionan
+              icon: Icon(
+                Icons.home,
+                size: 40,
+              ), //Home es un icono por defecto que nos proporcionan
               label: ("Home"), //Titulo de la seccion, si no tiene en blanco
             ),
 
             BottomNavigationBarItem(
-              icon: Icon(Icons
-                  .add_circle), //Home es un icono por defecto que nos proporcionan
+              icon: Icon(
+                Icons.add_circle,
+                size: 40,
+              ), //Home es un icono por defecto que nos proporcionan
               label: ("Bovinos"), //Titulo de la seccion, si no tiene en blanco
             ),
 
             BottomNavigationBarItem(
-              icon: Icon(Icons
-                  .app_registration), //Home es un icono por defecto que nos proporcionan
+              icon: Icon(
+                Icons.app_registration,
+                size: 40,
+              ), //Home es un icono por defecto que nos proporcionan
               label:
                   ("Consultas"), //Titulo de la seccion, si no tiene en blanco
             ),

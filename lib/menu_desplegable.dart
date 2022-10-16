@@ -9,7 +9,7 @@ class MenuDesplegable extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('AGGAD'),
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xFF66BBB6A),
       ),
       body: AggadTrips(),
       drawer: Drawer(
@@ -17,11 +17,6 @@ class MenuDesplegable extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             _buildDrawerHeader(),
-            _buildDrawerItem(
-                icon: Icons.account_circle,
-                text: 'Profile',
-                onTap: () =>
-                    {Navigator.pushReplacementNamed(context, MyApp.profile)}),
             _buildDrawerItem(
                 icon: Icons.propane_tank_rounded,
                 text: 'Producción',

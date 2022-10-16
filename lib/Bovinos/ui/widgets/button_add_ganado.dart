@@ -1,5 +1,7 @@
+import 'package:aggad/widgets/crear_bovino_componentes.dart';
 import 'package:flutter/material.dart';
 import 'package:aggad/Bovinos/ui/screens/creando_bovino.dart';
+import 'package:aggad/widgets/selecfecha.dart';
 
 class ButtonAddGanado extends StatefulWidget {
   @override
@@ -14,7 +16,7 @@ class _ButtonAddGanadoState extends State<ButtonAddGanado> {
       iconSize: 70,
       onPressed: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (_) => CreandoBovino()),
+        MaterialPageRoute(builder: (_) => FormularioPage()),
       ),
       icon: Icon(
         Icons.add_circle,

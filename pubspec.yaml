@@ -46,6 +46,9 @@ dependencies:
   sqflite: ^2.1.0+1
   syncfusion_flutter_calendar: ^20.3.49
   intl: ^0.17.0
+  datetime_picker_formfield: ^2.0.1
+  image_cropper: ^3.0.0
+  image_picker: ^0.8.6
 
 dev_dependencies:
   flutter_test:
