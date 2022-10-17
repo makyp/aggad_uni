@@ -34,9 +34,8 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
       tooltip: "Agregar Image", //si alguien lo preciona
       onPressed:
           onPressedFav, //se debe agregar siempre, se le esta enviando el metodo que se desea
-      child: Icon(this._pressed
-          ? Icons.add_circle_outlined
-          : Icons.add_circle_outlined),
+      child: Icon(
+          this._pressed ? Icons.camera_alt_rounded : Icons.camera_alt_rounded),
     );
   }
 }

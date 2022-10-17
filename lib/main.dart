@@ -1,3 +1,4 @@
+import 'package:aggad/User/ui/screens/iniciar_sesion.dart';
 import 'package:flutter/material.dart';
 import 'package:aggad/Registros/ui/screens/registro_inseminacion.dart';
 import 'package:aggad/Registros/ui/screens/registro_partos.dart';
@@ -7,6 +8,8 @@ import 'package:aggad/Registros/ui/screens/registro_ventas_leche.dart';
 import 'package:aggad/User/ui/screens/profile.dart';
 import 'menu_desplegable.dart';
 import 'aggad_trips.dart';
+import 'package:aggad/User/ui/screens/bienvenido.dart';
+import 'package:aggad/User/ui/screens/iniciar_sesion.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,6 +22,7 @@ class MyApp extends StatelessWidget {
   static String registro_inseminacion = RegistroInseminacion.routeName;
   static String registro_partos = RegistroPartos.routeName;
   static const String registro_ventas_leche = RegistroVentasLeche.routeName;
+  static const String iniciar_sesion = IniciarSesionFinal.routeName;
 
   @override
   Widget build(BuildContext context) {
@@ -34,9 +38,10 @@ class MyApp extends StatelessWidget {
           registro_inseminacion: (context) => RegistroInseminacion(),
           registro_partos: (context) => RegistroPartos(),
           registro_ventas_leche: (context) => RegistroVentasLeche(),
+          iniciar_sesion: (context) => IniciarSesionFinal(),
         },
         home: Scaffold(
-          body: MenuDesplegable(),
+          body: Bienvenido(),
         ));
   }
 }

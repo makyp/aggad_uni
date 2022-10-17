@@ -88,6 +88,8 @@ flutter:
     - assets/img/Vaca3.jpeg
     - assets/img/Vaca4.jpeg
     - assets/img/Vaca5.jpeg
+    - assets/img/Aggad.png
+    - assets/img/gestion.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

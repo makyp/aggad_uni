@@ -61,7 +61,7 @@ class MenuDesplegable extends StatelessWidget {
                 icon: Icons.login_sharp,
                 onTap: () => {
                       Navigator.pushReplacementNamed(
-                          context, MyApp.registro_ventas_leche)
+                          context, MyApp.iniciar_sesion)
                     }),
           ],
         ),
