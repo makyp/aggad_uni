@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:aggad/User/ui/screens/iniciar_sesion.dart';
 
 class Review extends StatelessWidget {
-  String pathImage = "assets/img/gestion.png";
+  String pathImage = "assets/img/IconoGestion.png";
   String name = "Bienvenido a";
   String namedos = "AGGAD";
+  String espacio = "";
   String details = "Podra Llevar el control de su ganado,";
   String detailstwo = "Creando las Hojas de Vida y ";
   String detailsthree = "Gestionando todos sus registros";
@@ -24,7 +25,20 @@ class Review extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontFamily: "Lato",
-                fontSize: 30,
+                fontSize: 45,
+                fontWeight: FontWeight.w900,
+                color: Colors.white),
+          ),
+        ));
+    final Espacioji = Container(
+        margin: EdgeInsets.only(left: 20.0),
+        child: Center(
+          child: Text(
+            espacio,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontFamily: "Lato",
+                fontSize: 40,
                 fontWeight: FontWeight.w900,
                 color: Colors.white),
           ),
@@ -37,7 +51,7 @@ class Review extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontFamily: "Lato",
-                fontSize: 30,
+                fontSize: 40,
                 fontWeight: FontWeight.w900,
                 color: Colors.white),
           ),
@@ -80,8 +94,7 @@ class Review extends StatelessWidget {
       children: <Widget>[
         userComment,
         userCommenttwo,
-        Divider(),
-        Divider(),
+        Espacioji,
         ussserDetails,
         usserDetailsTwo,
         usserDetailsThree
@@ -94,6 +107,7 @@ class Review extends StatelessWidget {
       height: 200.0,
       decoration: BoxDecoration(
           shape: BoxShape.circle,
+          color: Colors.white70,
           image:
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
@@ -111,7 +125,7 @@ class Review extends StatelessWidget {
             context,
             MaterialPageRoute(builder: (_) => IniciarSesionFinal()),
           ),
-          color: Color(0xFFA5D6A7),
+          color: Color(0xFF388E3C),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
           child: Text(
@@ -136,7 +150,7 @@ class Review extends StatelessWidget {
             context,
             MaterialPageRoute(builder: (_) => Registrarse()),
           ),
-          color: Color(0xFFA5D6A7),
+          color: Color(0xFF388E3C),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
           child: Text(
@@ -155,16 +169,21 @@ class Review extends StatelessWidget {
     );
     return Container(
       color: Color(0xFFA5D6A7),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+      child: ListView(
         children: <Widget>[
-          photo,
-          userDetails,
-          Divider(),
-          Divider(),
-          Divider(),
-          Divider(),
-          Botones,
+          Container(
+            color: Color(0xFFA5D6A7),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                photo,
+                userDetails,
+                Espacioji,
+                Espacioji,
+                Botones,
+              ],
+            ),
+          ),
         ],
       ),
     );

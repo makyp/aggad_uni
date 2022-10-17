@@ -9,7 +9,10 @@ class CrearBovinos extends StatelessWidget {
     return Stack(
       children: <Widget>[
         ListView(
-          children: <Widget>[GanadoList(), ButtonAddGanado()],
+          children: <Widget>[
+            GanadoList(),
+            ButtonAddGanado(),
+          ],
         )
       ],
     );

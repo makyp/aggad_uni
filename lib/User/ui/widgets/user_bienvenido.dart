@@ -5,9 +5,11 @@ class Review extends StatelessWidget {
   String pathImage = "assets/img/Aggad.png";
   String name = "Bienvenido a";
   String namedos = "AGGAD";
+  String espacio = "";
   String details = "Podra Llevar el control de su ganado,";
   String detailstwo = "Creando las Hojas de Vida y ";
   String detailsthree = "Gestionando todos sus registros";
+
   Review(this.pathImage, this.name, this.namedos, this.details, this.detailstwo,
       this.detailsthree);
 
@@ -23,7 +25,20 @@ class Review extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontFamily: "Lato",
-                fontSize: 30,
+                fontSize: 40,
+                fontWeight: FontWeight.w900,
+                color: Colors.white),
+          ),
+        ));
+    final Espacioji = Container(
+        margin: EdgeInsets.only(left: 20.0),
+        child: Center(
+          child: Text(
+            espacio,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontFamily: "Lato",
+                fontSize: 40,
                 fontWeight: FontWeight.w900,
                 color: Colors.white),
           ),
@@ -36,7 +51,7 @@ class Review extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontFamily: "Lato",
-                fontSize: 30,
+                fontSize: 40,
                 fontWeight: FontWeight.w900,
                 color: Colors.white),
           ),
@@ -79,8 +94,7 @@ class Review extends StatelessWidget {
       children: <Widget>[
         userComment,
         userCommenttwo,
-        Divider(),
-        Divider(),
+        Espacioji,
         ussserDetails,
         usserDetailsTwo,
         usserDetailsThree
@@ -88,11 +102,12 @@ class Review extends StatelessWidget {
     );
 
     final photo = Container(
-      margin: EdgeInsets.only(top: 100, left: 0),
+      margin: EdgeInsets.only(top: 50, left: 0),
       width: 250.0,
       height: 250.0,
       decoration: BoxDecoration(
           shape: BoxShape.circle,
+          color: Colors.white60,
           image:
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
@@ -124,16 +139,21 @@ class Review extends StatelessWidget {
 
     return Container(
       color: Color(0xFFA5D6A7),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+      child: ListView(
         children: <Widget>[
-          photo,
-          userDetails,
-          Divider(),
-          Divider(),
-          Divider(),
-          Divider(),
-          ButtonSiguiente,
+          Container(
+            color: Color(0xFFA5D6A7),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                photo,
+                Espacioji,
+                userDetails,
+                Espacioji,
+                ButtonSiguiente,
+              ],
+            ),
+          ),
         ],
       ),
     );

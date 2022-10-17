@@ -146,7 +146,7 @@ class _CamposRegistroVentasState extends State<CamposRegistroVentas> {
         hintText:
             'Nombre del recolector', // Texto que aparece dentro de la caja y desaparece al escribir
         labelText:
-            'NOmbre del recolector', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
+            'Nombre del recolector', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
         // helperText:
         //     'Introduce el nombre del bovino', // Texto que aparece a la izquierda y abajo de la caja
         suffixIcon: Icon(

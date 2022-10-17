@@ -3,7 +3,7 @@ import '../widgets/user_bienvenido_registro_inicio.dart';
 
 class BienvenidoRegistroInicio extends StatelessWidget {
   @override
-  String pathImage = "assets/img/gestion.png";
+  String pathImage = "assets/img/IconoGestion.png";
   String name = "";
   String namedos = "AGGAD";
   String details = "Lleva tus registros de manera eficiente,";
