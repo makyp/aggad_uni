@@ -74,12 +74,12 @@ class MenuDesplegable extends StatelessWidget {
       accountName: Text("Finca Montiel"),
       accountEmail: Text("Guacheta, Cundinamarca"),
       currentAccountPicture: Container(
-        width: 90.0,
-        height: 90.0,
-        margin: EdgeInsets.only(right: 20.0),
+        margin: EdgeInsets.only(top: 0, left: 0),
+        width: 250.0,
+        height: 250.0,
         decoration: BoxDecoration(
             border: Border.all(
-                color: Colors.white, width: 2.0, style: BorderStyle.solid),
+                color: Colors.white, width: 1.0, style: BorderStyle.solid),
             shape: BoxShape.circle,
             image: DecorationImage(
                 fit: BoxFit.cover, image: AssetImage(imgProfile))),

@@ -7,14 +7,14 @@ import 'package:aggad/widgets/realizar_registro.dart';
 import 'package:aggad/widgets/card_image.dart';
 import 'package:aggad/widgets/RadioButtonGrup.dart';
 
-class FormularioPage extends StatefulWidget {
-  const FormularioPage({Key? key}) : super(key: key);
+class CrearBovinoComponentes extends StatefulWidget {
+  const CrearBovinoComponentes({Key? key}) : super(key: key);
 
   @override
-  _FormularioPageState createState() => _FormularioPageState();
+  _CrearBovinoComponentesState createState() => _CrearBovinoComponentesState();
 }
 
-class _FormularioPageState extends State<FormularioPage> {
+class _CrearBovinoComponentesState extends State<CrearBovinoComponentes> {
   String _nombre = '';
   String _identificacion = '';
   String _fechanacimiento = '';
@@ -51,9 +51,6 @@ class _FormularioPageState extends State<FormularioPage> {
     "Simenta americano"
   ];
   String _ValorEscogidoRaza = 'Seleccione la raza';
-
-  String _radioAtenciomInicial = '';
-  Set<String> _valoresRadio = {'Macho', 'Hembra'};
 
   @override
   Widget build(BuildContext context) {

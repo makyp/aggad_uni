@@ -56,8 +56,10 @@ class Ganado extends StatelessWidget {
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
 
-    return Row(
-      children: <Widget>[photo, userDetails],
+    return Container(
+      child: Row(
+        children: <Widget>[photo, userDetails],
+      ),
     );
   }
 }

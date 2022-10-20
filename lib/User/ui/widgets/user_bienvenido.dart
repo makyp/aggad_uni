@@ -6,9 +6,9 @@ class Review extends StatelessWidget {
   String name = "Bienvenido a";
   String namedos = "AGGAD";
   String espacio = "";
-  String details = "Podra Llevar el control de su ganado,";
-  String detailstwo = "Creando las Hojas de Vida y ";
-  String detailsthree = "Gestionando todos sus registros";
+  String details = "Podra llevar el control de su ganado,";
+  String detailstwo = "creando las hojas de Vida y ";
+  String detailsthree = "gestionando todos sus registros.";
 
   Review(this.pathImage, this.name, this.namedos, this.details, this.detailstwo,
       this.detailsthree);
@@ -24,7 +24,7 @@ class Review extends StatelessWidget {
             name,
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontFamily: "Lato",
+                fontFamily: "Verdana",
                 fontSize: 40,
                 fontWeight: FontWeight.w900,
                 color: Colors.white),
@@ -37,7 +37,7 @@ class Review extends StatelessWidget {
             espacio,
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontFamily: "Lato",
+                fontFamily: "Verdana",
                 fontSize: 40,
                 fontWeight: FontWeight.w900,
                 color: Colors.white),
@@ -50,7 +50,7 @@ class Review extends StatelessWidget {
             namedos,
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontFamily: "Lato",
+                fontFamily: "Verdana",
                 fontSize: 40,
                 fontWeight: FontWeight.w900,
                 color: Colors.white),
@@ -64,7 +64,7 @@ class Review extends StatelessWidget {
             details,
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontFamily: "Lato", fontSize: 20, color: Colors.white),
+                fontFamily: "Verdana", fontSize: 20, color: Colors.white),
           ),
         ));
 

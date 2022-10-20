@@ -12,7 +12,8 @@ class _HomeAggad extends State<HomeAggad> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: TableEventsExample(),
-    );
+        body: Container(
+      child: TableEventsExample(),
+    ));
   }
 }

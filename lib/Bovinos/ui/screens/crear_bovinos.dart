@@ -6,10 +6,10 @@ class CrearBovinos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Stack(
+    return ListView(
       children: <Widget>[
-        ListView(
-          children: <Widget>[
+        Stack(
+          children: [
             GanadoList(),
             ButtonAddGanado(),
           ],

@@ -22,29 +22,22 @@ class _IniciarSesionState extends State<IniciarSesion> {
   @override
   Widget build(BuildContext context) {
     final AppBarBonito = Stack(
-      alignment: Alignment(0, 0.5), //Alinear el boton respecto a la tarjeta
+      alignment: Alignment(0, 0), //Alinear el boton respecto a la tarjeta
       children: <Widget>[
         Container(
-            height: 150.0,
-            width: 420.0,
-            margin: EdgeInsets.only(
-              top: 0,
-              left: 0,
-              right: 0,
-            ),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                shape: BoxShape.rectangle,
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                    color: Color(0xFFA5D6A7),
-                    offset: Offset(0, 7.0),
-                  )
-                ])),
+          color: Color(0xFFA5D6A7),
+          height: 200.0,
+          width: 450.0,
+          margin: EdgeInsets.only(
+            top: 0,
+            left: 0,
+            right: 0,
+          ),
+        ),
         Text(
           "Inicio de Sesión",
           style: TextStyle(
-              fontWeight: FontWeight.w600, fontSize: 30, color: Colors.white),
+              fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
         ),
       ],
     );
@@ -62,7 +55,7 @@ class _IniciarSesionState extends State<IniciarSesion> {
             context,
             MaterialPageRoute(builder: (_) => MenuDesplegable()),
           ),
-          color: Color(0xFFA5D6A7),
+          color: Color(0xff558b2f),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
           child: Text(

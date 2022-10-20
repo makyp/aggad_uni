@@ -15,7 +15,7 @@ class CreandoBovino extends StatelessWidget {
         drawer: MenuDesplegable(),
         body: ListView(
           children: <Widget>[
-            FormularioPage(),
+            CrearBovinoComponentes(),
           ],
         )
         // This trailing comma makes auto-formatting nicer for build methods.

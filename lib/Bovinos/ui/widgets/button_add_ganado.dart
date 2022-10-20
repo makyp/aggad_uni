@@ -11,18 +11,20 @@ class ButtonAddGanado extends StatefulWidget {
 class _ButtonAddGanadoState extends State<ButtonAddGanado> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: IconButton(
-        tooltip: "Añadir Bovino",
-        iconSize: 70,
-        onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (_) => FormularioPage()),
-        ),
-        icon: Icon(
-          Icons.add_circle,
-          color: Colors.green,
-        ),
+    return IconButton(
+      padding: EdgeInsetsDirectional.only(
+        start: 340,
+        top: 570,
+      ),
+      tooltip: "Añadir Bovino",
+      iconSize: 70,
+      onPressed: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => CrearBovinoComponentes()),
+      ),
+      icon: Icon(
+        Icons.add_circle,
+        color: Color(0xff558b2f),
       ),
     );
   }
