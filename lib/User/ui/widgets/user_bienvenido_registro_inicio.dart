@@ -8,8 +8,8 @@ class Review extends StatelessWidget {
   String namedos = "AGGAD";
   String espacio = "";
   String details = "Podra Llevar el control de su ganado,";
-  String detailstwo = "Creando las Hojas de Vida y ";
-  String detailsthree = "Gestionando todos sus registros";
+  String detailstwo = "creando las Hojas de Vida y ";
+  String detailsthree = "gestionando todos sus registros";
   Review(this.pathImage, this.name, this.namedos, this.details, this.detailstwo,
       this.detailsthree);
 
@@ -129,7 +129,7 @@ class Review extends StatelessWidget {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
           child: Text(
-            "Inicio de Sesión",
+            "Iniciar Sesión",
             style: TextStyle(
                 fontWeight: FontWeight.w600, fontSize: 20, color: Colors.white),
           ),

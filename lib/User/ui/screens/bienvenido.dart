@@ -7,8 +7,8 @@ class Bienvenido extends StatelessWidget {
   String name = "Bienvenido a";
   String namedos = "AGGAD";
   String details = "Podra Llevar el control de su ganado,";
-  String detailstwo = "Creando las Hojas de Vida y ";
-  String detailsthree = "Gestionando todos sus registros";
+  String detailstwo = "creando las Hojas de Vida y ";
+  String detailsthree = "gestionando todos sus registros.";
 
   Widget build(BuildContext context) {
     // TODO: implement build
