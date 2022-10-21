@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../menu_desplegable.dart';
+import 'package:aggad/User/ui/widgets/chec_box.dart';
 
 class UserRegistrarse extends StatefulWidget {
   const UserRegistrarse({Key? key}) : super(key: key);
@@ -44,7 +45,11 @@ class _UserRegistrarseState extends State<UserRegistrarse> {
         ),
       ],
     );
-
+    final Espacio = Text(
+      "",
+      style: TextStyle(
+          fontWeight: FontWeight.bold, fontSize: 10, color: Colors.white),
+    );
     final ButtonRegistro = Padding(
       padding: EdgeInsets.symmetric(horizontal: 100),
       child: Container(
@@ -74,19 +79,18 @@ class _UserRegistrarseState extends State<UserRegistrarse> {
         padding: EdgeInsets.symmetric(horizontal: 10.5, vertical: 10.0),
         children: [
           AppBarBonito,
-          Divider(),
-          Divider(),
+          Espacio,
+          Espacio,
           NombreCuenta(),
-          Divider(),
+          Espacio,
           NombreFinca(),
-          Divider(),
+          Espacio,
           _crearEmail(),
-          Divider(),
+          Espacio,
           _crearPassword(),
-          Divider(),
           _crearPasswordconf(),
-          AceptaTerminos(),
-          Divider(),
+          MyStatefulWidget(),
+          Espacio,
           ButtonRegistro,
         ],
       ),
@@ -235,12 +239,6 @@ class _UserRegistrarseState extends State<UserRegistrarse> {
         labelText: 'Confirma tu Contraseña',
         suffixIcon: Icon(Icons.password),
       ),
-    );
-  }
-
-  Widget AceptaTerminos() {
-    return Center(
-      child: Text("Acepta los Términos y condiciones"),
     );
   }
 }

@@ -41,6 +41,11 @@ class _IniciarSesionState extends State<IniciarSesion> {
         ),
       ],
     );
+    final Espacio = Text(
+      "",
+      style: TextStyle(
+          fontWeight: FontWeight.bold, fontSize: 35, color: Colors.white),
+    );
 
     final ButtonRegistro = Padding(
       padding: EdgeInsets.symmetric(horizontal: 100),
@@ -71,14 +76,12 @@ class _IniciarSesionState extends State<IniciarSesion> {
         padding: EdgeInsets.symmetric(horizontal: 10.5, vertical: 10.0),
         children: [
           AppBarBonito,
-          Divider(),
-          Divider(),
+          Espacio,
           _crearEmail(),
-          Divider(),
+          Espacio,
           _crearPassword(),
-          Divider(),
+          Espacio,
           ButtonRegistro,
-          Divider(),
           OlvidoPassword(),
         ],
       ),
@@ -136,7 +139,13 @@ class _IniciarSesionState extends State<IniciarSesion> {
 
   Widget OlvidoPassword() {
     return Center(
-      child: Text("¿Olvido su contraseña? _Click Aqui_"),
+      child: Text(
+        "¿Olvido su contraseña?",
+        style: TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 15,
+            color: Color(0xff558b2f)),
+      ),
     );
   }
 }

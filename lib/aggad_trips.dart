@@ -4,6 +4,8 @@ import 'package:aggad/Bovinos/ui/screens/crear_bovinos.dart';
 import 'package:aggad/Bovinos/ui/screens/consultas.dart';
 import 'menu_desplegable.dart';
 
+int indexTap = 0;
+
 class AggadTrips extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -13,7 +15,6 @@ class AggadTrips extends StatefulWidget {
 }
 
 class _AggadTrips extends State<AggadTrips> {
-  int indexTap = 0;
   final List<Widget> widgetsChildren = [
     HomeAggad(),
     CrearBovinos(),
