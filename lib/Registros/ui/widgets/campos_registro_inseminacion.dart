@@ -16,26 +16,28 @@ class _CamposRegistroInseminacion extends State<CamposRegistroInseminacion> {
   String _fechaderegistro = '';
   String _idenficaciopajilla = "";
   String _RazaPajilla = "";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: ListView(
       padding: EdgeInsets.symmetric(horizontal: 10.5, vertical: 10.0),
       children: [
+        espacio,
         IdentificacionBovino(),
-        Divider(),
+        espacio,
         BasicDateField(),
-        Divider(),
+        espacio,
         _IdentificacionPajilla(),
-        Divider(),
+        espacio,
         _RazaDePajilla(),
-        Divider(),
+        espacio,
         RealizarRegistro("Enviar"),
+        espacio,
       ],
     ));
   }
 
+  final espacio = Text("");
   Widget IdentificacionBovino() {
     return TextField(
       onChanged: (valor) => setState(() {

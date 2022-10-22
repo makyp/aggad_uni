@@ -30,22 +30,24 @@ class _CamposRegistroVentasState extends State<CamposRegistroVentas> {
       padding: EdgeInsets.symmetric(horizontal: 10.5, vertical: 10.0),
       children: [
         BasicDateField(),
-        Divider(),
+        espacio,
         NombreEmpresaRecolectora(), // TextField con múltiples opciones de decoración
-        Divider(),
+        espacio,
         NombreRecolector(),
-        Divider(),
+        espacio,
         _ListadoDeJornadaIndicado(),
-        Divider(),
+        espacio,
         NumeroLitros(),
-        Divider(),
+        espacio,
         CardImage(),
-        Divider(),
+        espacio,
         RealizarRegistro("Enviar"),
+        espacio,
       ],
     ));
   }
 
+  final espacio = Text("");
   Widget _ListadoDeJornadaIndicado() {
     return Container(
       height: 60.0,

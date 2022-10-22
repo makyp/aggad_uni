@@ -62,26 +62,29 @@ class _CrearBovinoComponentesState extends State<CrearBovinoComponentes> {
         body: ListView(
           padding: EdgeInsets.symmetric(horizontal: 10.5, vertical: 10.0),
           children: [
+            espacio,
             NombreBovino(),
             RadioGroup(),
-            Divider(),
+            espacio,
             IdentificacionBovino(),
-            Divider(),
+            espacio,
             BasicDateField(),
-            Divider(),
+            espacio,
             _ListadoDeRazasIndicado(),
-            Divider(),
+            espacio,
             IdentificacionBovinoPadre(),
-            Divider(),
+            espacio,
             IdentificacionBovinoMadre(),
-            Divider(),
+            espacio,
             CardImage(),
-            Divider(),
+            espacio,
             RealizarRegistro("Enviar"),
+            espacio,
           ],
         ));
   }
 
+  final espacio = Text("");
   /*Widget _visualizarDatos() {
     return Column(
       children: [

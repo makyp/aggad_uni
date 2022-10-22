@@ -11,14 +11,16 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
-    return CheckboxListTile(
-      value: timeDilation != 1.0,
-      onChanged: (bool? value) {
-        setState(() {
-          timeDilation = value! ? 10.0 : 1.0;
-        });
-      },
-      title: const Text('Acepta los terminos y condiciones'),
+    return Center(
+      child: CheckboxListTile(
+        value: timeDilation != 1.0,
+        onChanged: (bool? value) {
+          setState(() {
+            timeDilation = value! ? 3.5 : 1.0;
+          });
+        },
+        title: const Text('Acepta los terminos y condiciones'),
+      ),
     );
   }
 }

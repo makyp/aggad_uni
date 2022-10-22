@@ -65,19 +65,21 @@ class _CampoRegistroPartosState extends State<CampoRegistroPartos> {
         NombreBovino(),
         // TextField con múltiples opciones de decoración
 
-        Divider(),
+        espacio,
         IdentificacionBovino(),
-        Divider(),
+        espacio,
         BasicDateField(),
         RadioGroupEstado(),
-        Divider(),
+        espacio,
         _ListadoDeRazasIndicado(),
         RadioGroup(),
         RealizarRegistro("Enviar"),
+        espacio
       ],
     ));
   }
 
+  final espacio = Text("");
   Widget _ListadoDeRazasIndicado() {
     return Container(
       height: 60.0,

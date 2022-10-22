@@ -25,18 +25,20 @@ class _CamposRegistroProduccion extends State<CamposRegistroProduccion> {
       padding: EdgeInsets.symmetric(horizontal: 10.5, vertical: 10.0),
       children: [
         IdentificacionBovino(),
-        Divider(),
+        espacio,
         BasicDateField(),
-        Divider(),
+        espacio,
         _NumeroLitros(),
-        Divider(),
+        espacio,
         _CantidadConcentrado(),
-        Divider(),
+        espacio,
         RealizarRegistro("Enviar"),
+        espacio
       ],
     ));
   }
 
+  final espacio = Text("");
   Widget IdentificacionBovino() {
     return TextField(
       onChanged: (valor) => setState(() {
