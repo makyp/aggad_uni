@@ -16,7 +16,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         value: timeDilation != 1.0,
         onChanged: (bool? value) {
           setState(() {
-            timeDilation = value! ? 3.5 : 1.0;
+            timeDilation = value! ? 1.1 : 1.0;
           });
         },
         title: const Text('Acepta los terminos y condiciones'),
