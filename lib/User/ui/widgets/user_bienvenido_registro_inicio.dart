@@ -7,9 +7,9 @@ class Review extends StatelessWidget {
   String name = "Bienvenido a";
   String namedos = "AGGAD";
   String espacio = "";
-  String details = "Podra Llevar el control de su ganado,";
-  String detailstwo = "creando las Hojas de Vida y ";
-  String detailsthree = "gestionando todos sus registros";
+  String details = "Podra llevar el control de su ganado,";
+  String detailstwo = "creando las hojas de vida y ";
+  String detailsthree = "gestionando todos sus registros.";
   Review(this.pathImage, this.name, this.namedos, this.details, this.detailstwo,
       this.detailsthree);
 

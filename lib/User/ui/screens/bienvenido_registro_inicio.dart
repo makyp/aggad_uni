@@ -8,7 +8,7 @@ class BienvenidoRegistroInicio extends StatelessWidget {
   String namedos = "AGGAD";
   String details = "Lleva tus registros de manera eficiente,";
   String detailstwo = "permitiendo aumentar el rendimiento";
-  String detailsthree = "y administración de tus  animales";
+  String detailsthree = "y administración de tus  animales.";
 
   Widget build(BuildContext context) {
     // TODO: implement build

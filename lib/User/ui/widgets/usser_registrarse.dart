@@ -22,22 +22,10 @@ class _UserRegistrarseState extends State<UserRegistrarse> {
       alignment: Alignment(0, 0.5), //Alinear el boton respecto a la tarjeta
       children: <Widget>[
         Container(
-            height: 150.0,
-            width: 420.0,
-            margin: EdgeInsets.only(
-              top: 0,
-              left: 0,
-              right: 0,
-            ),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                shape: BoxShape.rectangle,
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                    color: Color(0xFFA5D6A7),
-                    offset: Offset(0, 7.0),
-                  )
-                ])),
+          color: Color(0xFFA5D6A7),
+          height: 230.0,
+          width: 2000.0,
+        ),
         Text(
           "Creación de la cuenta",
           style: TextStyle(
@@ -63,7 +51,7 @@ class _UserRegistrarseState extends State<UserRegistrarse> {
             context,
             MaterialPageRoute(builder: (_) => MenuDesplegable()),
           ),
-          color: Color(0xFF558B2F),
+          color: Color(0xFF388E3C),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
           child: Text(

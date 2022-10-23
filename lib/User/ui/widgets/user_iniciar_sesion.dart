@@ -1,11 +1,4 @@
-import 'package:aggad/widgets/card_image.dart';
 import 'package:flutter/material.dart';
-import 'package:aggad/widgets/selecfecha.dart';
-import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
-import 'package:intl/intl.dart';
-import 'package:aggad/widgets/realizar_registro.dart';
-import 'package:aggad/widgets/RadioButtonGrup.dart';
-
 import '../../../menu_desplegable.dart';
 
 class IniciarSesion extends StatefulWidget {
@@ -26,13 +19,8 @@ class _IniciarSesionState extends State<IniciarSesion> {
       children: <Widget>[
         Container(
           color: Color(0xFFA5D6A7),
-          height: 200.0,
-          width: 450.0,
-          margin: EdgeInsets.only(
-            top: 0,
-            left: 0,
-            right: 0,
-          ),
+          height: 250.0,
+          width: 2000.0,
         ),
         Text(
           "Inicio de Sesión",
@@ -60,7 +48,7 @@ class _IniciarSesionState extends State<IniciarSesion> {
             context,
             MaterialPageRoute(builder: (_) => MenuDesplegable()),
           ),
-          color: Color(0xff558b2f),
+          color: Color(0xFF388E3C),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
           child: Text(
@@ -130,8 +118,8 @@ class _IniciarSesionState extends State<IniciarSesion> {
           borderSide: BorderSide(color: Color(0xFFe5e5e5)),
           borderRadius: BorderRadius.all(Radius.circular(30.0)),
         ),
-        hintText: 'Password de entrada',
-        labelText: 'Password',
+        hintText: 'Contraseña',
+        labelText: 'Contraseña',
         suffixIcon: Icon(Icons.password),
       ),
     );

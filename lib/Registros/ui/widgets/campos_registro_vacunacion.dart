@@ -171,7 +171,7 @@ class _CamposRegistroVacunacion extends State<CamposRegistroVacunacion> {
         hintText:
             'Medicamento ', // Texto que aparece dentro de la caja y desaparece al escribir
         labelText:
-            'Medicacmento suministrado', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
+            'Medicamento suministrado', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
         // helperText:
         //     'Introduce el nombre del bovino', // Texto que aparece a la izquierda y abajo de la caja
         suffixIcon: Icon(Icons
@@ -247,7 +247,7 @@ class BasicDateField extends StatelessWidget {
           hintText:
               'DD-MM-AAAA', // Texto que aparece dentro de la caja y desaparece al escribir
           labelText:
-              'Fecha de Nacimiento', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
+              'Fecha de la vacunación', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
           // helperText:
           //     'Introduce el nombre del bovino', // Texto que aparece a la izquierda y abajo de la caja
           suffixIcon: Icon(Icons

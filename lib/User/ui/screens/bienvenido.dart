@@ -6,8 +6,8 @@ class Bienvenido extends StatelessWidget {
   String pathImage = "assets/img/Aggad.png";
   String name = "Bienvenido a";
   String namedos = "AGGAD";
-  String details = "Podra Llevar el control de su ganado,";
-  String detailstwo = "creando las Hojas de Vida y ";
+  String details = "Podra llevar el control de su ganado,";
+  String detailstwo = "creando las hojas de Vida y ";
   String detailsthree = "gestionando todos sus registros.";
 
   Widget build(BuildContext context) {

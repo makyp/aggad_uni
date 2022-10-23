@@ -1,7 +1,6 @@
 import 'package:aggad/widgets/crear_bovino_componentes.dart';
 import 'package:flutter/material.dart';
 import 'package:aggad/menu_desplegable.dart';
-import 'package:aggad/widgets/crear_bovino_componentes.dart';
 
 class CreandoBovino extends StatelessWidget {
   @override

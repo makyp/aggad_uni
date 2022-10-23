@@ -20,7 +20,13 @@ class Consultas extends StatelessWidget {
                     tooltip: "Gestion del ganado",
                     iconSize: 70,
                     onPressed: () {
-                      print("Aun no se encuentra habilidato");
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Color(0xff558b2f),
+                          duration: Duration(seconds: 1),
+                          content: Text("Aun no se encuentra habilitado"),
+                        ),
+                      );
                     },
                     icon: Icon(
                       Icons.app_registration,
@@ -44,7 +50,13 @@ class Consultas extends StatelessWidget {
                     tooltip: "Control registros de Vacunación",
                     iconSize: 70,
                     onPressed: () {
-                      print("Aun no se encuentra habilidato");
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Color(0xff558b2f),
+                          duration: Duration(seconds: 1),
+                          content: Text("Aun no se encuentra habilitado"),
+                        ),
+                      );
                     },
                     icon: Icon(
                       Icons.check_box_rounded,
@@ -65,10 +77,16 @@ class Consultas extends StatelessWidget {
                   height: 10,
                 ),
                 IconButton(
-                    tooltip: "Control Registros de Vacunación",
+                    tooltip: "Control Registros de Inseminación",
                     iconSize: 60,
                     onPressed: () {
-                      print("Aun no se encuentra habilidato");
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Color(0xff558b2f),
+                          duration: Duration(seconds: 1),
+                          content: Text("Aun no se encuentra habilitado"),
+                        ),
+                      );
                     },
                     icon: Icon(
                       Icons.settings_input_svideo,
@@ -89,10 +107,16 @@ class Consultas extends StatelessWidget {
                   height: 10,
                 ),
                 IconButton(
-                    tooltip: "Gestion del ganado",
+                    tooltip: "Gestion de partos",
                     iconSize: 60,
                     onPressed: () {
-                      print("Aun no se encuentra habilidato");
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Color(0xff558b2f),
+                          duration: Duration(seconds: 1),
+                          content: Text("Aun no se encuentra habilitado"),
+                        ),
+                      );
                     },
                     icon: Icon(
                       Icons.favorite_outlined,
@@ -113,10 +137,16 @@ class Consultas extends StatelessWidget {
                   height: 10,
                 ),
                 IconButton(
-                    tooltip: "Gestion del ganado",
+                    tooltip: "Gestion de producción ",
                     iconSize: 60,
                     onPressed: () {
-                      print("Aun no se encuentra habilidato");
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Color(0xff558b2f),
+                          duration: Duration(seconds: 1),
+                          content: Text("Aun no se encuentra habilitado"),
+                        ),
+                      );
                     },
                     icon: Icon(
                       Icons.propane_tank_rounded,
@@ -137,10 +167,16 @@ class Consultas extends StatelessWidget {
                   height: 10,
                 ),
                 IconButton(
-                    tooltip: "Gestion del ganado",
+                    tooltip: "Gestion de venta de leche",
                     iconSize: 60,
                     onPressed: () {
-                      print("Aun no se encuentra habilidato");
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Color(0xff558b2f),
+                          duration: Duration(seconds: 1),
+                          content: Text("Aun no se encuentra habilitado"),
+                        ),
+                      );
                     },
                     icon: Icon(
                       Icons.monetization_on_rounded,

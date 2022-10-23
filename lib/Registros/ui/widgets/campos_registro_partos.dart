@@ -1,10 +1,7 @@
-import 'package:aggad/widgets/card_image.dart';
 import 'package:flutter/material.dart';
-import 'package:aggad/widgets/selecfecha.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:intl/intl.dart';
 import 'package:aggad/widgets/realizar_registro.dart';
-import 'package:aggad/widgets/card_image.dart';
 import 'package:aggad/widgets/RadioButtonGrup.dart';
 import 'package:aggad/widgets/RadioButtonGrupEstado.dart';
 
@@ -67,6 +64,8 @@ class _CampoRegistroPartosState extends State<CampoRegistroPartos> {
 
         espacio,
         IdentificacionBovino(),
+        espacio,
+        IdentificacionBovinoNacido(),
         espacio,
         BasicDateField(),
         RadioGroupEstado(),
@@ -178,9 +177,44 @@ class _CampoRegistroPartosState extends State<CampoRegistroPartos> {
         // counterText:
         //    'Número de caracteres: ${_nombre.length}', // Texto que aparece a la derecha y debajo de la caja
         hintText:
-            'Identificación del bovino', // Texto que aparece dentro de la caja y desaparece al escribir
+            'Identificación de la madre', // Texto que aparece dentro de la caja y desaparece al escribir
         labelText:
-            'Identificación', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
+            'Identificación madre', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
+        // helperText:
+        //     'Introduce el nombre del bovino', // Texto que aparece a la izquierda y abajo de la caja
+        suffixIcon: Icon(Icons
+            .recent_actors_sharp), // Widget que aparece a la derecha dentro de la caja
+        //       icon: Icon(Icons
+        //           .accessibility), // Widget que aparece a la izquierda fuera de la caja
+      ),
+    );
+  }
+
+  Widget IdentificacionBovinoNacido() {
+    return TextField(
+      onChanged: (valor) => setState(() {
+        _identificacion = valor;
+      }), // Fijarse que podemos guardar una cadena vacía
+      textCapitalization: TextCapitalization.words,
+      keyboardType: TextInputType.text,
+      decoration: InputDecoration(
+        filled: true,
+        fillColor: Color(0xFFe5e5e5),
+        border: InputBorder.none,
+        enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Color(0xFFe5e5e5)),
+            borderRadius: BorderRadius.all(Radius.circular(30.0))),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Color(0xFFe5e5e5)),
+          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+        ),
+
+        // counterText:
+        //    'Número de caracteres: ${_nombre.length}', // Texto que aparece a la derecha y debajo de la caja
+        hintText:
+            'Identificación del nacido', // Texto que aparece dentro de la caja y desaparece al escribir
+        labelText:
+            'Identificación del parto', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
         // helperText:
         //     'Introduce el nombre del bovino', // Texto que aparece a la izquierda y abajo de la caja
         suffixIcon: Icon(Icons
@@ -222,7 +256,7 @@ class BasicDateField extends StatelessWidget {
           hintText:
               'DD-MM-AAAA', // Texto que aparece dentro de la caja y desaparece al escribir
           labelText:
-              'Fecha de Nacimiento', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
+              'Fecha del parto', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
           // helperText:
           //     'Introduce el nombre del bovino', // Texto que aparece a la izquierda y abajo de la caja
           suffixIcon: Icon(Icons

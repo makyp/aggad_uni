@@ -1,6 +1,4 @@
-import 'package:aggad/widgets/card_image.dart';
 import 'package:flutter/material.dart';
-import 'package:aggad/widgets/selecfecha.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:intl/intl.dart';
 import 'package:aggad/widgets/realizar_registro.dart';
@@ -175,7 +173,7 @@ class BasicDateField extends StatelessWidget {
           hintText:
               'DD-MM-AAAA', // Texto que aparece dentro de la caja y desaparece al escribir
           labelText:
-              'Fecha de Nacimiento', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
+              'Fecha del registro', // Texto qye aparece encima de la caja AL PULSAR EN EL INTERIOR PARA ESCRIBIR
           // helperText:
           //     'Introduce el nombre del bovino', // Texto que aparece a la izquierda y abajo de la caja
           suffixIcon: Icon(Icons
