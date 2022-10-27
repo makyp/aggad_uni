@@ -46,6 +46,7 @@ dependencies:
   datetime_picker_formfield: ^2.0.1
   generic_bloc_provider: ^2.1.1
   flutter_launcher_icons: ^0.10.0
+  dwds: ^16.0.0
 
 dev_dependencies:
   flutter_test:
