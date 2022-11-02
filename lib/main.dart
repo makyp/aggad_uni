@@ -6,10 +6,7 @@ import 'package:aggad/Registros/ui/screens/registro_produccion.dart';
 import 'package:aggad/Registros/ui/screens/registro_vacunacion.dart';
 import 'package:aggad/Registros/ui/screens/registro_ventas_leche.dart';
 import 'package:aggad/User/ui/screens/profile.dart';
-import 'menu_desplegable.dart';
-import 'aggad_trips.dart';
 import 'package:aggad/User/ui/screens/bienvenido.dart';
-import 'package:aggad/User/ui/screens/iniciar_sesion.dart';
 
 void main() {
   runApp(MyApp());

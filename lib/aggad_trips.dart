@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:aggad/Bovinos/ui/screens/home_aggad.dart';
 import 'package:aggad/Bovinos/ui/screens/crear_bovinos.dart';
 import 'package:aggad/Bovinos/ui/screens/consultas.dart';
-import 'menu_desplegable.dart';
 
 int indexTap = 0;
 
 class AggadTrips extends StatefulWidget {
+  const AggadTrips({super.key});
+
   @override
   State<StatefulWidget> createState() {
+    // ignore: todo
     // TODO: implement createState
     return _AggadTrips();
   }
@@ -29,6 +31,7 @@ class _AggadTrips extends State<AggadTrips> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
 
     return Scaffold(
