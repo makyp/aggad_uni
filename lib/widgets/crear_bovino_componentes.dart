@@ -176,41 +176,6 @@ class _CrearBovinoComponentesState extends State<CrearBovinoComponentes> {
     return lista;
   }
 
-  /* Widget _crearEmail() {
-    return TextField(
-      onChanged: (valor) => setState(() {
-        _email = valor;
-        print(valor);
-      }), // Fijarse que podemos guardar una cadena vacía
-      keyboardType: TextInputType.emailAddress,
-      decoration: InputDecoration(
-          hintText: 'Email del paciente',
-          labelText: 'Email',
-          suffixIcon: Icon(Icons.email),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15.0),
-          )),
-    );
-  }
-*/
-  /*Widget _crearPassword() {
-    return TextField(
-      onChanged: (valor) => setState(() {
-        _password = valor;
-      }), // Fijarse que podemos guardar una cadena vacía
-      obscureText: true,
-      obscuringCharacter: '-',
-      maxLength: 20,
-      decoration: InputDecoration(
-          hintText: 'Password de entrada',
-          labelText: 'Password',
-          suffixIcon: Icon(Icons.password),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15.0),
-          )),
-    );
-  }*/
-
   Widget NombreBovino() {
     return TextField(
       onChanged: (valor) => setState(() {
