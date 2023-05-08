@@ -7,8 +7,15 @@ import 'package:aggad/Registros/ui/screens/registro_vacunacion.dart';
 import 'package:aggad/Registros/ui/screens/registro_ventas_leche.dart';
 import 'package:aggad/User/ui/screens/profile.dart';
 import 'package:aggad/User/ui/screens/bienvenido.dart';
-
-void main() {
+//importaciones necesarias para la base de datos
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+//Fin de las importaciones
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MyApp());
 }
 
@@ -41,5 +48,7 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           body: Bienvenido(),
         ));
+
+
   }
 }
