@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "849288698640",
+    "project_id": "dbaggad-b92fb",
+    "storage_bucket": "dbaggad-b92fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849288698640:android:f854ef42b483b2ac6ca395",
+        "android_client_info": {
+          "package_name": "com.example.aggad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849288698640-plgvrdgh0uvkosrte8vh5n9bcep57hle.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiBJ2VCgBqf6oO4zgCjCHBWIYcmRIzU9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849288698640-plgvrdgh0uvkosrte8vh5n9bcep57hle.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "849288698640-off55t6l0f6hsam01ap91emptuc9qns9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.aggad"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
