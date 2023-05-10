@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:aggad/Bovinos/ui/widgets/ganado_lits.dart';
 import 'package:aggad/Bovinos/ui/widgets/ganado.dart';
 import 'package:aggad/widgets/crear_bovino_componentes.dart';
 
@@ -18,7 +17,7 @@ class CrearBovinos extends StatelessWidget {
               children: <Widget>[
                 Ganado(
                     "assets/img/Vaca.jpeg",
-                    "Berta",
+                    "Petunia",
                     "ID: 2003D1 - 2 Años, 6 meses",
                     "Su media de leche son 15 litros"),
                 Ganado(
